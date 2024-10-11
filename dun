@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>CETRAK CETREK LAMPU</title>
+    </head>
+    <body>
+        <img src="assets/images/off.png" alt="" id="lampu1" />
+        <h1>CETRAKGEYS</h1>
+        <button onclick="saklar('on')">SALKEN</button>
+        <button onclick="saklar('off')">SALKON</button>
+        
+        <!-- script js -->
+        <script>
+            function saklar(params) {
+                console.log(params);
+
+                let lampu1 = document.getElementById("lampu1");
+
+                if(params == "on"){
+                    lampu1.src = "assets/images/on.png"
+                }
+                if(params =="off"){
+                    lampu1.src = "assets/images/off.png"
+                }
+
+                return lampu1;
+            }
+        </script>
+    </body>
+</html>
